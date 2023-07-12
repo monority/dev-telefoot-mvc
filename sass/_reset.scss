@@ -1,0 +1,23 @@
+@use "variables" as v;
+
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: none;
+    scroll-behavior: smooth;
+    scrollbar-color: #8e8e8e #fff;
+    scrollbar-width: thin;
+    text-rendering: optimizeLegibility;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+html {
+    font-size: 62,5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Raleway", sans-serif;
+    background-color: #191a20;
+    color: #f4f4f6;
+    margin: 0;
+}

@@ -1,0 +1,321 @@
+@use "reset";
+@use "variables" as v;
+@import "mixin";
+@import "create-page";
+@import "login-page";
+
+// Globales
+
+@font-face {
+  font-family: "AvantGarde";
+  src: url("../fonts/subset-AvantGarde-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+header {
+  z-index: 1;
+  position: fixed;
+  font-family: "AvantGarde";
+  width: 100vw;
+
+  img {
+    width: 8rem;
+  }
+
+  ul {
+    display: flex;
+    font-weight: lighter;
+    align-items: center;
+    text-transform: uppercase;
+    column-gap: 2rem;
+
+    a {
+      font-weight: lighter;
+      color: white;
+      font-size: 1.1rem;
+
+    }
+  }
+}
+
+hr {
+  width: 80%;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.btn {
+  background-color: #bb9147;
+  font-weight: bold;
+  width: 22vw;
+  font-size: 1.1rem;
+  padding: 1rem;
+  color: white;
+}
+
+.nav-wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.second-list-wrap {
+  font-size: 1.35rem;
+
+  li:nth-child(1) {
+    padding: 0.5rem 1rem;
+    background-color: #bb9147;
+
+    a {
+      color: black;
+    }
+  }
+
+  li:nth-child(2) {
+    padding: 0.5rem 1rem;
+    border: 1px solid white;
+  }
+}
+
+.container {
+  max-width: 110rem;
+  margin: 0 auto;
+}
+
+#home {
+  img {
+    width: 100%;
+  }
+}
+
+#resume {
+  img {
+    max-height: 8rem;
+  }
+
+  strong {
+    text-transform: uppercase;
+  }
+
+  .box-wrap {
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+    flex-basis: 33.33%;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+
+    &::before {
+      content: "";
+      height: 0.1rem;
+      width: 5rem;
+      position: absolute;
+      top: 0;
+      left: calc(50% - 2.5rem);
+      background-color: #9fa5b2;
+    }
+  }
+
+  .content {
+    position: relative;
+  }
+
+  .content-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .europe-wrap-text {
+    text-align: center;
+    width: 100%;
+  }
+
+  .logos-wrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  .title-wrap {
+    text-align: center;
+  }
+
+}
+
+#offers {
+
+  h2,
+  p {
+    text-align: center;
+  }
+
+  p {
+    color: #dadada;
+
+    font-size: 1rem;
+  }
+
+  img {
+    width: 9rem;
+  }
+
+  span {
+    color: #b4b4b4;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .logo-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .content-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Raleway';
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .box-wrap {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 30%;
+    background-color: #24272d;
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .subtitle-wrap {
+    color: #687182;
+    font-size: 0.9rem;
+  }
+
+  .price-wrap {
+    strong {
+      font-size: 2rem;
+    }
+  }
+
+  .feature {
+    border: 1px solid white;
+    padding: 1rem;
+  }
+
+  .logo-wrap,
+  .subtitle-wrap {
+    margin: 0 0 2rem 0;
+  }
+}
+
+#channel {
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  img {
+    width: 5rem;
+  }
+
+  span {
+    color: #687182;
+    font-size: 5rem;
+  }
+
+  .content-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .box-wrap {
+    margin: 1rem;
+    background-color: #24272d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 31%;
+  }
+}
+
+#telefoot-bar {
+  background-image: url("../img/bg-bar.d86633e.jpg");
+  background-size: cover;
+  padding: 8rem 0;
+}
+
+#telefoot-bar img {
+  height: 7rem;
+}
+
+
+footer {
+  background-image: url("../img/bg-footer.ac49cc9.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 2rem 0;
+  font-family: "AvantGarde";
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+footer .footer-brand img {
+  height: 4rem;
+}
+
+footer .footer-list {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0 1rem;
+}
+
+footer .footer-list ul {
+  padding: 0;
+}
+
+footer .footer-list ul li {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+footer .footer-copy span {
+  color: #687182;
+}
