@@ -7,28 +7,22 @@ class CreateModel
     public $firstname;
     public $lastname;
     public $password;
+    public $confirmPassword;
+    public $confirmEmail;
 
     public function __construct(PDO $db)
     {
-        if (isset($_POST["email"])) {
-            $this->email = trim(strip_tags($_POST["email"]));
-        }
-
-        if (isset($_POST["firstname"])) {
-            $this->firstname = trim(strip_tags($_POST["firstname"]));
-        }
-
-        if (isset($_POST["lastname"])) {
-            $this->lastname = trim(strip_tags($_POST["lastname"]));
-        }
-
-        if (isset($_POST["password"])) {
-            $password = password_hash($this->password, PASSWORD_DEFAULT);
-            $this->password = trim(strip_tags($_POST["password"]));
-            
-        }
-
         $this->db = $db;
+        if (!empty($_POST)) {
+            
+            $this->email = trim(strip_tags($_POST["email"]));
+            $this->firstname = trim(strip_tags($_POST["firstname"]));
+            $this->lastname = trim(strip_tags($_POST["lastname"]));
+            $this->password = trim(strip_tags($_POST["password"]));
+            $this->confirmEmail = trim(strip_tags($_POST["confirmEmail"]));
+            $this->confirmPassword= trim(strip_tags($_POST["confirmPassword"]));
+        }
+
     }
 }
 

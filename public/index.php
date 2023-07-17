@@ -20,6 +20,26 @@ $pages = array(
         "controller" => "loginController",
         "view" => "loginView"
     ),
+    "logout" => array(
+        "model" => "logoutModel",
+        "controller" => "logoutController",
+        "view" => "logoutView"
+    ),
+    "newpassword" => array(
+        "model" => "newpasswordModel",
+        "controller" => "newpasswordController",
+        "view" => "newpasswordView"
+    ),
+    "resetpassword" => array(
+        "model" => "resetModel",
+        "controller" => "resetController",
+        "view" => "resetView"
+    ),
+    "index" => array(
+        "model" => "indexModel",
+        "controller" => "indexController",
+        "view" => "indexView"
+    ),
 );
 $find = false;
 
@@ -35,7 +55,8 @@ foreach ($pages as $key => $value) {
 if ($find) {
     require("../config/index.php");
 
-    $dsn = "mysql:host=" . DB_HOSTNAME . ";dbname=" . DB_DATABASE;
+    // $dsn = "mysql:host" . DB_HOSTNAME . ";dbname=" . DB_DATABASE;
+    $dsn ="mysql:host=localhost;dbname=telefoot";
     $db = new PDO($dsn, DB_USERNAME, DB_PASSWORD);
 
     require(DIR_MODEL . "$page.php");

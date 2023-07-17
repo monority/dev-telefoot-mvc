@@ -20,8 +20,18 @@
                     <li><a href="">Telefoot Bar</a></li>
                 </ul>
                 <ul class="second-list-wrap">
-                    <li><a href="?page=create">S'abonner</a></li>
-                    <li><a href="?page=login">Se connecter</a></li>
+                    <?php
+                    if (isset($_SESSION["user"])) {
+                        ?>
+                        <li><a href="?page=index">Live</a></li>
+                        <li><a href="?page=logout">Se déconnecter</a></li>
+                        <?php
+                    } else {
+                        ?>
+                        <li><a href="?page=create">S'abonner</a></li>
+                        <li><a href="?page=login">Se connecter</a></li>
+                        <?php
+                    } ?>
                 </ul>
             </div>
         </div>
