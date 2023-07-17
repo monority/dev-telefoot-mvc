@@ -10,6 +10,7 @@ class loginController
     public function __construct(loginModel $model)
     {
         $this->model = $model;
+        $this->errormsg = "Impossible de se connecter avec les informations saisies, veuillez réessayer";
         
     }
     public function getUser()
@@ -27,8 +28,9 @@ class loginController
             );
             header("Location: index.php");
         } else {
-            $this->errormsg = "Impossible de se connecter avec les informations saisies, veuillez réessayer";
+            return $this->errormsg;
         }
+
     }
 
 }

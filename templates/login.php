@@ -20,7 +20,7 @@ session_start();
     
         </div>
         <div class="form-content">
-        <p><?= $message ?></p>
+        <p><?= isset($message) ? $message : "" ?></p>
             <form action="" method="post">
                 <div class="form-group">
                     <label for="input-email"></label>
@@ -40,8 +40,6 @@ session_start();
                 <p>Vous ne posséder paz toujours pas de compte ?</p>
                 <a href="?page=create" class="btn btn-login">Créer un compte</a>
             </div>
-
-
     </div>
 </div>
 </div>

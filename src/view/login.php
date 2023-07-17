@@ -3,7 +3,7 @@ class loginView
 {
     private $controller;
     private $template;
-    public $message;
+    public $message = "";
     public function __construct(loginController $controller)
     {
         $this->controller = $controller;
@@ -14,6 +14,7 @@ class loginView
     {
         if (!empty($_POST)) {
             $this->controller->getUser();
+            $message = $this->controller->errormsg;
         }
         require($this->template);
        
