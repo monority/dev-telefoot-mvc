@@ -1,22 +1,12 @@
 <?php
 session_start();
-?>
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Telefoot - La chaine du foot</title>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/icomoon.css" />
-    <link rel="stylesheet" href="../css/main.css" />
-</head>
+include("header.php")
+    ?>
 
 <div id="login-page">
     <div class="container">
         <div class="wrap-img">
-            <a href="?page=home"> <img src="../img/telefoot-color-bg-01.svg" alt=""></a>
+            <a href="?page=home"> <img src="../assets/img/telefoot-color-bg-01.svg" alt=""></a>
     
         </div>
         <div class="form-content">

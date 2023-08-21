@@ -80,7 +80,7 @@ include("header.php");
                     <label for="input-lastname">Nom *</label>
                     <input type="text" name="lastname" id="input-lastname"
                         value="<?= isset($lastname) ? $lastname : "" ?>">
-                        <?php
+                    <?php
                     if (isset($errors["lastname"])) {
                         ?>
                         <p>
@@ -92,7 +92,7 @@ include("header.php");
                 </div>
                 <div class="form-bottom">
                     <h4>*Champs obligatoires</h4>
-                    <input type="submit" class="btn" value="ENVOYER">
+                    <input type="submit" class="btn" value="Valider">
                 </div>
             </form>
         </div>

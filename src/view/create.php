@@ -12,21 +12,25 @@ class createView
     }
     public function render()
     {
+        $message = "";
+
         if (!empty($_POST)) {
-            $errors["firstname"] = $this->controller->errorFirstname;
-            $errors["lastname"] = $this->controller->errorLastname;
-            $errors["password"] = $this->controller->errorPassword;
-            $errors["email"] = $this->controller->errorEmail;
-            $errors["confirmEmail"] = $this->controller->errorEmailConfirmation;
-            $errors["confirmPassword"] = $this->controller->errorPasswordConfirmation;
-            $this->controller->createUser();
+            $data = $this->controller->getDataForm();
+
+            if (!$this->controller->formValidation()) {
+                $errors["message"] = "Le mot de passe ne correspond pas ou doit contenir 8 caractères minimum, une lettre majuscule, une lettre minuscule, un chiffre et un caractère spécial";
+            }
+            if ($this->controller->createUser()) {
+                header("Location: login");
+            }
+            else{
+                $message = "erreur de base de données";
+            }
+            $message = "<div class=\"message-alert\">{$errors["message"]}</div>";
+
         }
-       
         require $this->template;
     }
-
-    
-
 }
 
 

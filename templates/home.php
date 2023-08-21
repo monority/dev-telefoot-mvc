@@ -8,7 +8,7 @@ include("header.php")
     <div id="home">
 
         <div class="background-wrap">
-            <img src="../img/background-home.jpg" alt="">
+            <img src="../assets/img/background-home.jpg" alt="">
 
         </div>
 
@@ -17,12 +17,12 @@ include("header.php")
     <div id="resume">
         <div class="container">
             <div class="logos-wrap">
-                <img src="../img/ligue1-logo.png" alt="Ligue 1 Uber Eats" />
-                <img src="../img/ligue2-logo.png" alt="Ligue 2 BKT" />
+                <img src="../assets/img/ligue1-logo.png" alt="Ligue 1 Uber Eats" />
+                <img src="../assets/img/ligue2-logo.png" alt="Ligue 2 BKT" />
                 <div class="europe-wrapper">
                     <div class="europe-wrapper-image">
-                        <img src="../img/championsleague-logo.svg" alt="Ligue des Champions" />
-                        <img src="../img/europaleague-logo.svg" alt="Ligue Europa" />
+                        <img src="../assets/img/championsleague-logo.svg" alt="Ligue des Champions" />
+                        <img src="../assets/img/europaleague-logo.svg" alt="Ligue Europa" />
                     </div>
                     <div class="europe-wrap-text">
                         Saison 2020-2021
@@ -70,7 +70,7 @@ include("header.php")
             <div class="content-wrap">
                 <div class="box-wrap">
                     <div class="logo-wrap">
-                        <img src="../img/telefoot-mono-white.svg" alt="">
+                        <img src="../assets/img/telefoot-mono-white.svg" alt="">
 
                     </div>
                     <span>Pass mobile only</span>
@@ -88,7 +88,7 @@ include("header.php")
                 </div>
                 <div class="box-wrap">
                     <div class="logo-wrap">
-                        <img src="../img/telefoot-color-bg-01.svg" alt="">
+                        <img src="../assets/img/telefoot-color-bg-01.svg" alt="">
 
                     </div>
                     <span>Pass mobile only</span>
@@ -112,9 +112,9 @@ include("header.php")
                 </div>
                 <div class="box-wrap">
                     <div class="logo-wrap">
-                        <img src="../img/logo-netflix.6dbba45.svg" alt="">
+                        <img src="../assets/img/logo-netflix.6dbba45.svg" alt="">
                         <span>+</span>
-                        <img src="../img/telefoot-color-bg-01.svg" alt="">
+                        <img src="../assets/img/telefoot-color-bg-01.svg" alt="">
                     </div>
                     <span>Pass mobile only</span>
                     <div class="price-wrap">
@@ -189,7 +189,7 @@ include("header.php")
     </div>
     <div id="telefoot-bar">
         <div class="container">
-            <img src="img/telefoot-bar-color-bg.svg" alt="Telefoot Bar">
+            <img src="../assets/img/telefoot-bar-color-bg.svg" alt="Telefoot Bar">
             <h2>Le meilleur du foot pour les bars et les restaurants</h2>
             <p>Bienvenue sur TELEFOOT BAR, la chaîne du foot réservée aux professionnels.</p>
             <p>TELEFOOT BAR est le seul service qui réunit plus <strong>de 600 matchs</strong> du Championnat de

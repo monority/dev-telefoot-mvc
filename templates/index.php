@@ -8,7 +8,7 @@ include("header.php");
     <ul class="channels">
         <?php for ($i=0; $i < 7; $i++) { 
             ?>
-                <img src="../img/channels/telefootstadium<?=$i?>.webp" alt="">
+                <img src="../assets/img/channels/telefootstadium<?=$i?>.webp" alt="">
         <?php } ?>
     </ul>
 

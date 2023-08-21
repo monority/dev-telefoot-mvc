@@ -2,6 +2,9 @@
 RewriteEngine on
 
 # Lister les différentes règles de réécriture
-# L'expression ([0-9]) de l'expression régulière se retrouve dans $1 // $2, $3, $n... si plusieurs groupes ([0-9])
-RewriteRule ^create/([0-9]+)$ index.php?page=create
+RewriteRule ^create$   ./index.php?page=create
+RewriteRule ^login$   ./index.php?page=login
+RewriteRule ^index$   ./index.php?page=index
+RewriteRule ^logout$   ./index.php?page=logout
+RewriteRule ^home$   ./index.php?page=home
 
